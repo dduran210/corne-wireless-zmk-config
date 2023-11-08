@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -67,10 +68,10 @@
 
             label = "Raise";
             bindings = <
-&none  &trans            &trans  &trans        &trans  &trans    &trans  &mt LC(HOME) HOME  &kp UP_ARROW  &mt LC(END) END  &trans   &none
-&none  &kp LEFT_CONTROL  &trans  &kp LGUI      &trans  &trans    &trans  &kp LEFT           &kp DOWN      &kp RIGHT        &kp SQT  &none
-&none  &trans            &trans  &trans        &trans  &trans    &trans  &kp PG_UP          &trans        &kp PG_DN        &trans   &none
-                                 &kp LEFT_ALT  &trans  &trans    &trans  &trans             &trans
+&none  &trans            &trans  &trans        &bt BT_SEL 0  &bt BT_SEL 1    &trans  &mt LC(HOME) HOME  &kp UP_ARROW  &mt LC(END) END  &trans   &none
+&none  &kp LEFT_CONTROL  &trans  &kp LGUI      &trans        &trans          &trans  &kp LEFT           &kp DOWN      &kp RIGHT        &kp SQT  &none
+&none  &trans            &trans  &trans        &trans        &trans          &trans  &kp PG_UP          &trans        &kp PG_DN        &trans   &none
+                                 &kp LEFT_ALT  &trans        &trans          &trans  &trans             &trans
             >;
         };
     };
