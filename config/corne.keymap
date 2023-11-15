@@ -63,10 +63,10 @@
 
             label = "Raise";
             bindings = <
-&none  &kp TAB    &trans    &trans    &bt BT_SEL 0  &bt BT_SEL 1    &kp C_VOLUME_UP    &mt LC(HOME) HOME  &kp UP_ARROW  &mt LC(END) END  &trans  &none
-&none  &sk LSHFT  &sk LGUI  &sk LALT  &sk LCTRL     &trans          &kp C_VOLUME_DOWN  &kp LEFT           &kp DOWN      &kp RIGHT        &trans  &none
-&none  &trans     &trans    &trans    &trans        &trans          &kp K_MUTE         &kp PG_UP          &trans        &kp PG_DN        &trans  &none
-                            &trans    &trans        &trans          &trans             &trans             &trans
+&none  &kp ESC    &trans    &trans    &kp TAB  &trans    &kp C_VOLUME_UP    &mt LC(HOME) HOME  &kp UP_ARROW  &mt LC(END) END  &bt BT_SEL 0  &none
+&none  &sk LSHFT  &sk LGUI  &sk LALT  &trans   &trans    &kp C_VOLUME_DOWN  &kp LEFT           &kp DOWN      &kp RIGHT        &bt BT_SEL 1  &none
+&none  &sk LCTRL  &trans    &trans    &trans   &trans    &kp K_MUTE         &kp PG_UP          &trans        &kp PG_DN        &trans        &none
+                            &trans    &trans   &trans    &trans             &trans             &trans
             >;
         };
     };
