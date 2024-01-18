@@ -55,7 +55,7 @@
             layers = <1>;
         };
 
-        BT_CLR {
+        BT_CLR_ {
             bindings = <&bt BT_CLR>;
             key-positions = <39 34 6>;
         };
