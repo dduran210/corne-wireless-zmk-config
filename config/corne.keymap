@@ -14,8 +14,50 @@
 
         F1_ {
             bindings = <&kp F1>;
-            key-positions = <2 3>;
+            key-positions = <2 3 38>;
             layers = <1>;
+        };
+
+        F2_ {
+            bindings = <&kp F2>;
+            key-positions = <3 4 38>;
+        };
+
+        F3_ {
+            bindings = <&kp F3>;
+            key-positions = <14 15 38>;
+        };
+
+        F4_ {
+            bindings = <&kp F4>;
+            key-positions = <14 15 38>;
+        };
+
+        F6_ {
+            bindings = <&kp F6>;
+            key-positions = <38 26 27>;
+        };
+
+        F7_ {
+            bindings = <&kp F7>;
+            key-positions = <38 27 27 28>;
+        };
+
+        F8_ {
+            bindings = <&kp F8>;
+            key-positions = <38 5 4>;
+            layers = <1>;
+        };
+
+        F9_ {
+            bindings = <&kp F9>;
+            key-positions = <38 16 17>;
+            layers = <1>;
+        };
+
+        BT_CLR {
+            bindings = <&bt BT_CLR>;
+            key-positions = <39 34 6>;
         };
     };
 
@@ -65,7 +107,7 @@
             bindings = <
 &none  &kp ESC    &trans     &trans     &kp LC(R)  &kp LC(T)    &kp C_VOLUME_UP    &mt LC(HOME) HOME  &kp UP_ARROW  &mt LC(END) END  &bt BT_SEL 0  &none
 &none  &sk LSHFT  &sk LGUI   &sk LALT   &trans     &trans       &kp C_VOLUME_DOWN  &kp LEFT           &kp DOWN      &kp RIGHT        &bt BT_SEL 1  &none
-&none  &sk LCTRL  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp K_MUTE         &kp PG_UP          &trans        &kp PG_DN        &bt BT_CLR    &none
+&none  &sk LCTRL  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp K_MUTE         &kp PG_UP          &trans        &kp PG_DN        &bt BT_NXT    &none
                              &trans     &trans     &trans       &trans             &trans             &trans
             >;
         };
