@@ -54,11 +54,6 @@
             key-positions = <38 16 17>;
             layers = <1>;
         };
-
-        BT_CLR_ {
-            bindings = <&bt BT_CLR>;
-            key-positions = <39 38 32>;
-        };
     };
 
     keymap {
@@ -107,7 +102,7 @@
             bindings = <
 &none  &kp ESC    &trans     &trans     &kp LC(R)  &kp LC(T)    &kp C_VOLUME_UP    &mt LC(HOME) HOME  &kp UP_ARROW  &mt LC(END) END  &bt BT_SEL 0  &none
 &none  &sk LSHFT  &sk LGUI   &sk LALT   &trans     &trans       &kp C_VOLUME_DOWN  &kp LEFT           &kp DOWN      &kp RIGHT        &bt BT_SEL 1  &none
-&none  &sk LCTRL  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp K_MUTE         &kp PG_UP          &trans        &kp PG_DN        &bt BT_NXT    &none
+&none  &sk LCTRL  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp K_MUTE         &kp PG_UP          &bt BT_CLR    &kp PG_DN        &bt BT_NXT    &none
                              &trans     &trans     &trans       &trans             &trans             &trans
             >;
         };
