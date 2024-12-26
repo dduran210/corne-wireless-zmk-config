@@ -8,53 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt { tapping-term-ms = <100>; };
+
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        F1_ {
-            bindings = <&kp F1>;
-            key-positions = <2 3 38>;
-            layers = <1>;
-        };
-
-        F2_ {
-            bindings = <&kp F2>;
-            key-positions = <3 4 38>;
-        };
-
-        F3_ {
-            bindings = <&kp F3>;
-            key-positions = <14 15 38>;
-        };
-
-        F4_ {
-            bindings = <&kp F4>;
-            key-positions = <14 15 38>;
-        };
-
-        F6_ {
-            bindings = <&kp F6>;
-            key-positions = <38 26 27>;
-        };
-
-        F7_ {
-            bindings = <&kp F7>;
-            key-positions = <38 27 27 28>;
-        };
-
-        F8_ {
-            bindings = <&kp F8>;
-            key-positions = <38 5 4>;
-            layers = <1>;
-        };
-
-        F9_ {
-            bindings = <&kp F9>;
-            key-positions = <38 16 17>;
-            layers = <1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
